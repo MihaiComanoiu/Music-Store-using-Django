@@ -30,7 +30,7 @@
 
       <ul>
         <li><a href="{% url 'home' %}">Home</a></li>
-        <li><a href="{% url 'instruments' %}">Inistruments</a></li>
+        <li><a href="{% url 'instruments' %}">Instruments</a></li>
         {% if request.user.is_authenticated %}
         <li><a href="{% url 'account' %}">Account</a></li>
         {% else %}
