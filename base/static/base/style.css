@@ -48,7 +48,7 @@ nav ul li a:hover {
 }
 
 .indexHeader h1 {
-  color: #000;
+  color: #fff;
   font-size: 4rem;
   margin-bottom: 50px;
 }
@@ -67,4 +67,40 @@ nav ul li a:hover {
 .indexHeader a:hover {
   background-color: rgb(48, 48, 187);
   color: black;
+}
+
+.btn {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #fff;
+  background-color: rgb(70, 70, 249);
+  border-radius: 20px;
+  margin-top: 50px;
+  padding: 10px;
+  transition: 0.4s;
+}
+
+.btn:hover {
+  background-color: rgb(48, 48, 187);
+  color: black;
+}
+
+.instrumentsContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.instrument {
+  flex: 1 20%;
+  text-align: center;
+  margin-top: 50px;
+}
+.instrument p {
+  margin: 30px 0;
+}
+
+.instrument img {
+  width: 300px;
 }
