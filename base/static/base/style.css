@@ -90,13 +90,14 @@ nav ul li a:hover {
   flex-direction: row;
   flex-wrap: wrap;
   padding: 30px;
+  margin-bottom: 100px;
 }
 
 .instrument {
   flex: 1 20%;
   text-align: center;
-  margin-top: 50px;
 }
+
 .instrument p {
   margin: 30px 0;
 }
@@ -128,4 +129,37 @@ nav ul li a:hover {
 
 .detailsContainer .price {
   margin-bottom: 30px;
+}
+
+.adminHeader {
+  width: 100vw;
+  height: 100vh;
+  padding: 500px;
+  text-align: center;
+  background-image: url('https://images.pexels.com/photos/164821/pexels-photo-164821.jpeg?cs=srgb&dl=pexels-pixabay-164821.jpg&fm=jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.adminHeader h1 {
+  color: #fff;
+  font-size: 4rem;
+  margin-bottom: 50px;
+}
+
+.adminHeader a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #fff;
+  background-color: rgb(70, 70, 249);
+  border-radius: 20px;
+  margin-top: 50px;
+  padding: 20px;
+  transition: 0.4s;
+}
+
+.adminHeader a:hover {
+  background-color: rgb(48, 48, 187);
+  color: black;
 }
