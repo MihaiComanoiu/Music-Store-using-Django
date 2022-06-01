@@ -8,7 +8,9 @@
     <h3>{{instrument.price}}</h3>
     <img src="{{ instrument.image.url }}" alt="Not found" />
     <p>
-      <a href="#" class="btn">View product</a>
+      <a href="{% url 'instrument' instrument.id %}" class="btn"
+        >View product</a
+      >
       <a href="#" class="btn">Add to cart</a>
     </p>
     {% endfor %}
