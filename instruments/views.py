@@ -6,7 +6,7 @@ from django.urls import reverse_lazy
 
 from django.contrib.auth.mixins import LoginRequiredMixin
 
-from .models import Instrument
+from .models import Instrument, Category
 
 class InstrumentList( ListView):
  model = Instrument
@@ -35,3 +35,33 @@ class InstrumentDelete(LoginRequiredMixin, DeleteView):
  context_object_name = 'instrument'
  success_url = reverse_lazy('instruments')
  template_name = 'instruments/instrument-delete.html'
+
+
+
+class CategoryList( ListView):
+ model = Category
+ context_object_name = 'categories'
+ template_name = 'categories/categories.html'
+
+class CategoryDetail(DetailView):
+ model = Category
+ context_object_name = 'category'
+ template_name = 'categories/category.html'
+
+class CategoryCreate(LoginRequiredMixin, CreateView):
+ model = Category
+ fields = ['name', 'description']
+ success_url = reverse_lazy('categories')
+ template_name = 'categories/category-create.html'
+
+class CategoryUpdate(LoginRequiredMixin, UpdateView):
+ model = Category
+ fields = ['name', 'description'] 
+ success_url = reverse_lazy('categories')
+ template_name = 'categories/category-update.html'
+
+class CategoryDelete(LoginRequiredMixin, DeleteView):
+ model = Category
+ context_object_name = 'category'
+ success_url = reverse_lazy('categories')
+ template_name = 'categories/category-delete.html'

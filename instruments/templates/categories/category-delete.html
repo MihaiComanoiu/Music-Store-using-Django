@@ -1,10 +1,10 @@
 {% extends 'base/main.html' %} {% block content %}
 
-<a href="{% url 'instruments' %}">Go back</a>
+<a href="{% url 'categories' %}">Go back</a>
 
 <form method="POST">
   {% csrf_token %}
-  <p>Are you sure you want to delete this instrument? "{{instrument}}"</p>
+  <p>Are you sure you want to delete this category? "{{categories}}"</p>
   <input class="button" type="submit" value="Delete" />
 </form>
 
