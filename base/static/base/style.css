@@ -104,3 +104,28 @@ nav ul li a:hover {
 .instrument img {
   width: 300px;
 }
+
+.instrumentContainer {
+  width: 100%;
+}
+
+.imageContainer {
+  display: inline;
+  width: 50%;
+}
+
+.imageContainer img {
+  width: 600px;
+}
+
+.detailsContainer {
+  display: inline;
+  text-align: center;
+  margin-top: 300px;
+  width: 50%;
+  float: right;
+}
+
+.detailsContainer .price {
+  margin-bottom: 30px;
+}
