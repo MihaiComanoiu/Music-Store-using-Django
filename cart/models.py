@@ -1,7 +1,7 @@
 from pyexpat import model
 from django.db import models
 from django.contrib.auth.models import User
-from .models import Instrument
+from instruments.models import Instrument
 
 
 # Create your models here.
