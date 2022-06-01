@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+nav {
+  background-color: #897979;
+  width: 100vw;
+  height: 50px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  transition: 0.4s;
+}
+
+nav ul li a:hover {
+  color: white;
+}
+
+.indexHeader {
+  width: 100vw;
+  height: 100vh;
+  padding: 500px;
+  text-align: center;
+  background-image: url('https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?cs=srgb&dl=pexels-vishnu-r-nair-1105666.jpg&fm=jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.indexHeader h1 {
+  color: #000;
+  font-size: 4rem;
+  margin-bottom: 50px;
+}
+
+.indexHeader a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #fff;
+  background-color: rgb(70, 70, 249);
+  border-radius: 20px;
+  margin-top: 50px;
+  padding: 20px;
+  transition: 0.4s;
+}
+
+.indexHeader a:hover {
+  background-color: rgb(48, 48, 187);
+  color: black;
+}

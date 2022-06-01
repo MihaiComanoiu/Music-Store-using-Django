@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% load static %}
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'base/lgrgstyle.css' %}"
+    />
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="center">
+      <h1>Login</h1>
+
+      <form method="POST">
+        {% csrf_token %} {% for field in form %}
+        <div class="txt_field">
+          {{ field }} <span></span> {{ field.label_tag }}
+        </div>
+
+        {% endfor %}
+        <input type="submit" value="Login" />
+        <div class="link">
+          Nu ai cont? <a href="{% url 'register' %}">Register</a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+{% extends 'base/main.html' %} {% block content %}
+
+<div class="instrumentsContainer">
+  <div class="instrument">
+    {% for instrument in instruments %}
+    <h2>{{instrument.name}}</h2>
+    <h3>{{instrument.category}}</h3>
+    <h3>{{instrument.price}}</h3>
+    <h3>{{instrument.image}}</h3>
+    <img src="{% url listing.image.url %}" alt="Not found" /> {% endfor %}
+  </div>
+</div>
+{% endblock content %}
