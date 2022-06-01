@@ -1,5 +1,15 @@
 {% extends 'base/main.html' %} {% block content %}
 
-<div class="instrumentContainer">{{instrument}}</div>
+<div class="instrumentContainer">
+  <div class="imageContainer">
+    <img src="{{ instrument.image.url }}" alt="Not found" />
+  </div>
+  <div class="detailsContainer">
+    <h2>{{instrument.name}}</h2>
+    <h3>{{instrument.category}}</h3>
+    <h3 class="price">{{instrument.price}}</h3>
+    <a href="#" class="btn">Add to cart</a>
+  </div>
+</div>
 
 {% endblock content %}
