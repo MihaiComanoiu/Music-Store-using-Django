@@ -8,10 +8,15 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 
 from .models import Instrument, Category
 
+import logging
+# Get an instance of a logger
+logger = logging.getLogger(__name__)
+
 class InstrumentList( ListView):
  model = Instrument
  context_object_name = 'instruments'
  template_name = 'instruments/instruments.html'
+
 
 class InstrumentDetail(DetailView):
  model = Instrument
@@ -23,6 +28,10 @@ class InstrumentCreate(LoginRequiredMixin, CreateView):
  fields = ['name', 'category', 'price', 'description', 'image']
  success_url = reverse_lazy('instruments')
  template_name = 'instruments/instrument-create.html'
+
+ def form_valid(self, form):
+   logger.warning("Instrument created")
+   return super(InstrumentCreate, self).form_valid(form)
 
 class InstrumentUpdate(LoginRequiredMixin, UpdateView):
  model = Instrument

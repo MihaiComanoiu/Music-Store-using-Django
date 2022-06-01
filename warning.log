@@ -1,0 +1,48 @@
+Test
+Internal Server Error: /instrument-create/
+Traceback (most recent call last):
+  File "C:\Users\Mihai\Desktop\dev\IPDP\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Mihai\Desktop\dev\IPDP\env\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Mihai\Desktop\dev\IPDP\env\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view instruments.views.view didn't return an HttpResponse object. It returned None instead.
+Not Found: /favicon.ico
+Test
+Internal Server Error: /instrument-create/
+Traceback (most recent call last):
+  File "C:\Users\Mihai\Desktop\dev\IPDP\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Mihai\Desktop\dev\IPDP\env\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Mihai\Desktop\dev\IPDP\env\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view instruments.views.view didn't return an HttpResponse object. It returned None instead.
+Test
+Not Found: /favicon.ico
+Test
+Test
+Not Found: /favicon.ico
+Internal Server Error: /instrument-create/
+Traceback (most recent call last):
+  File "C:\Users\Mihai\Desktop\dev\IPDP\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Mihai\Desktop\dev\IPDP\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Mihai\Desktop\dev\IPDP\env\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Mihai\Desktop\dev\IPDP\env\lib\site-packages\django\contrib\auth\mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\Mihai\Desktop\dev\IPDP\env\lib\site-packages\django\views\generic\base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\Mihai\Desktop\dev\IPDP\env\lib\site-packages\django\views\generic\edit.py", line 184, in post
+    return super().post(request, *args, **kwargs)
+  File "C:\Users\Mihai\Desktop\dev\IPDP\env\lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+  File "C:\Users\Mihai\Desktop\dev\IPDP\env\MusicStore\instruments\views.py", line 33, in form_valid
+    logger.warning("Instrument " + self.name + " created")
+AttributeError: 'InstrumentCreate' object has no attribute 'name'
+Instrument created
+Not Found: /favicon.ico
+Instrument created
